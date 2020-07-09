@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="계 정보 입력"
+        android:id="@+id/textView22"
+        android:layout_gravity="center_horizontal"
+        android:textSize="45dp"
+        android:paddingBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView22"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="모임이름"
+            android:id="@+id/textView23"
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView24"
+            android:text="    :                   "
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:lines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/partyname" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="목적"
+            android:id="@+id/textView25"
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView26"
+            android:text="    :                   "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="0.77" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계 타기"
+            android:id="@+id/checkBox"
+            android:checked="false"
+            android:textSize="24dp"
+            android:onClick="SelectClicked" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친목"
+            android:id="@+id/checkBox4"
+            android:checked="true"
+            android:textSize="24dp"
+            android:onClick="SelectClicked" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/target_amount"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="계 타는 금액"
+            android:id="@+id/target1"
+
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp"
+            android:nestedScrollingEnabled="false"
+            android:enabled="false" />
+
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:id="@+id/target2"
+            android:text="    :                   "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:nestedScrollingEnabled="false"
+            android:enabled="false" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:lines="1"
+            android:ems="10"
+            android:id="@+id/target3"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            android:enabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원"
+            android:id="@+id/target4"
+            android:textSize="30dp"
+            android:nestedScrollingEnabled="false"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/target_amount"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="회비"
+            android:id="@+id/textView30"
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView31"
+            android:text="    :                   "
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:lines="1"
+            android:ems="10"
+            android:id="@+id/fee"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원"
+            android:id="@+id/textView32"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="수금 날짜"
+            android:id="@+id/textView33"
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView34"
+            android:text="    :                   "
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="매 월"
+            android:id="@+id/textView35"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:entries="@array/city"
+            android:layout_below="@+id/MakeButton"
+            android:layout_alignEnd="@+id/MakeButton"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:id="@+id/textView36"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="회원 추가"
+            android:id="@+id/textView37"
+            android:textSize="25dp"
+            android:paddingRight="50dp"
+            android:paddingLeft="70dp"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/button16"
+            android:textSize="25dp"
+            android:onClick="AddMember"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0명"
+            android:id="@+id/textView6"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="만들기"
+        android:id="@+id/MakeButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_centerHorizontal="true"
+        android:onClick="MakeClicked" />
+
+</RelativeLayout>

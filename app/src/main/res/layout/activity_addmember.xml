@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_weight="0.65"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jrv_comment_list2"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_above="@+id/AddOk" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:weightSum="1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/relativeLayout2">
+
+                <EditText
+                    android:lines="1"
+                    android:id="@+id/phoneText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="휴대폰 반호 000-0000-0000"
+                    android:layout_weight="0.69"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/Add"
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentTop="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/Add"
+                    android:onClick="Button"
+                    android:layout_weight="0.08"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완료"
+                android:id="@+id/AddOk"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

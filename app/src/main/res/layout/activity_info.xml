@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_weight="0.65"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Infotitle"
+            android:autoText="false"
+            android:textSize="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="개인 정보"
+            android:gravity="clip_horizontal"
+            android:paddingTop="5dp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/OK"
+            android:layout_gravity="right"
+            android:onClick="Button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="이름"
+            android:id="@+id/Name1"
+            android:layout_marginTop="45dp"
+            android:textSize="30dp"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/Infotitle"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/Name1_text"
+            android:textSize="30dp"
+            android:layout_alignTop="@+id/Name1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/OK"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="핸드폰"
+            android:id="@+id/HandP1"
+            android:textSize="30dp"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/Name1"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/HandP1_text"
+            android:textSize="30dp"
+            android:layout_alignTop="@+id/HandP1"
+            android:layout_alignStart="@+id/Name1_text"
+            android:layout_alignEnd="@+id/Name1_text"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="집전화"
+            android:id="@+id/HomeP1"
+            android:textSize="30dp"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/HandP1"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/HomeP1_text"
+            android:textSize="30dp"
+            android:layout_below="@+id/HandP1_text"
+            android:layout_alignStart="@+id/HandP1_text"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="20dp"
+            android:visibility="visible"
+            android:textColor="#000000"
+            android:text="055-1234-1234" />
+
+    </RelativeLayout>
+
+</LinearLayout>
